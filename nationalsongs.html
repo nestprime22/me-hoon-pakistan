@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>🇵🇰 National Songs</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+      body {
+        background-image: linear-gradient(#f8f8f849, #91c4a096), url('images/pakistan.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+   
+    a{
+    text-decoration: none !important;
+}
+
+.nav-header {
+    margin-top: px;
+    background: rgba(0, 95, 0, 0.623);
+}
+
+.navbar-news-ticker {
+    width: 100%;
+    background-color: #940000dc;
+    border-top: 3px solid #ffcc00;
+    border-bottom: 3px solid #ffcc00;
+}
+/* ========= */
+.news-ticker {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    padding: 1px 0;
+    overflow: hidden;
+
+    width: 100%;
+}
+
+.ticker-title {
+    padding: 0 20px;
+    font-size: 16px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.ticker-wrapper {
+    overflow: hidden;
+    position: relative;
+    flex-grow: 1;
+}
+
+.ticker-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-left 26s linear infinite;
+}
+
+.ticker-content span {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 15px;
+}
+
+@keyframes scroll-left {
+    100% {
+        transform: translateX(100%);
+    }
+
+    0% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive fix */
+@media (max-width: 768px) {
+    .ticker-title {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .ticker-content span {
+        font-size: 13px;
+        padding: 0 20px;
+    }
+}
+    .section-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: linear-gradient(to right, #172b49, #6610f2); /* Bootstrap primary */
+    position: relative;
+    margin-bottom: 3rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .section-heading::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #172b49, #6610f2);
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 576px) {
+    .section-heading {
+      font-size: 1.8rem;
+    }
+  }
+    .song-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .lyrics-box {
+      max-height: 200px;
+      overflow-y: auto;
+      background-color: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-light navbar-news-ticker">
+        <div class="container-fluid">
+            <div class="news-ticker">
+                <div class="ticker-title">Top Headlines:</div>
+                <div class="ticker-wrapper">
+                    <div class="ticker-content">
+                        <span>معاشی اصلاحات کا اعلان — مہنگائی پر قابو پانے کے لیے نئے معاشی اقدامات کا وعدہ۔</span>
+                        <span>نوجوانوں کے لیے روزگار اسکیم — حکومت 1 لاکھ نوکریاں فراہم کرے گی آئندہ 6 ماہ میں۔</span>
+                        <span>بجلی کے نرخوں میں کمی کا عندیہ — صارفین کو ریلیف دینے کے لیے ٹیرف پر نظرثانی کی جائے
+                            گی۔</span>
+                        <span>چھوٹے کاروبار کے لیے قرضوں میں آسانی — بلاسود قرضے نوجوان اور خواتین کو ترجیحی بنیادوں پر
+                            دیے جائیں گے۔</span>
+                        <span>شفافیت اور احتساب کا نظام مضبوط بنانے کا اعلان — کرپشن کے خلاف کریک ڈاؤن تیز ہوگا۔</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+<section>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-header">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpeg" class="me-2 rounded-circle" width="50" alt="">
+                Me Hoon Pakistan</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="help&center.html">help center</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="F&Q's.html">F&Qs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+  <div class="container py-5">
+    <h2 class="text-center text-primary fw-bold mb-4 section-heading">🇵🇰 National Songs of Pakistan</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Song Card -->
+      <div class="col-md-4">
+        <div class="card song-card h-100">
+          <img src="images/nationalsongs.jpg"
+            class="card-img-top" alt="Dil Dil Pakistan">
+          <div class="card-body text-center">
+            <h5 class="card-title"> پاکستان کا قومی ترانہ</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#songModal1">
+              <i class="fas fa-play"></i> Play Song
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="songModal1" tabindex="-1" aria-labelledby="songModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title" id="songModal1Label">🎵  پاکستان کا قومی ترانہ</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Pakistan Official National Anthem-Master.wav" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio1" controls class="w-100 mb-3">
+            <source src="songs/Pakistan Official National Anthem-Master.wav" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <div class="lyrics-box ">
+            پاک سرزمین شاد باد
+            کشورِ حسین شاد باد
+            تُو نشانِ عزمِ عالی شان
+            ارضِ پاکستان!
+            مرکزِ یقین شاد باد
+            
+            پاک سرزمین کا نظام
+            قُوَّتِ اُخوَّتِ عوام
+            قوم، ملک، سلطنت
+            پائندہ تابندہ باد!
+            شاد باد منزلِ مراد
+            
+            پرچمِ ستارہ و ہِلال
+            رہبرِ ترقِّی و کمال
+            ترجمانِ ماضی، شانِ حال
+            جانِ استقبال!
+            سایۂ خدائے ذوالجلال  
+            <!-- Add full lyrics here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="m-5">
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/dil-dil-pakistan.webp" class="card-img-top" alt="Dil Dil Pakistan" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Dil Dil Pakistan</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal1">Play</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/Jazba Junoon.jpg" class="card-img-top" alt="Jazba Junoon" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Jazba Junoon</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal2">Play</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/Ae Rah-e-Haq Ke Shaheedo.jpg" class="card-img-top" alt="Ae Rah-e-Haq Ke Shaheedo" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Ae Rah-e-Haq Ke Shaheedo</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal3">Play</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 4 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/sohni dharti.jpg" class="card-img-top" alt="Sohni Dharti" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Sohni Dharti</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal4">Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Modals -->
+  
+  <!-- Modal 1 -->
+   <div class="m-5">
+  <div class="modal fade"  id="modal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">دل دل پاکستان</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Dil Dil Pakistan (Slowed+Reverb) Without Music Full Song - Junaid Jamshed.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio1" controls class="w-100 mb-3">
+            <source src="songs/Dil Dil Pakistan (Slowed+Reverb) Without Music Full Song - Junaid Jamshed.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            ل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            ایسی زمین اور آسماں
+            ان کے سوا جانا کہاں
+            بڑھتی رہے یہ روشنی
+            چلتا رہے یہ کارواں
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            
+            دل دل سے ملتے ہیں تو
+            پیار کا چہرہ بنتا ہے
+            چہرہ بنتا ہے
+            پھول ایک لڑی میں پروئیں تو پھر
+            سہرا بنتا ہے
+            چہرہ بنتا ہے
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            
+            ایسی زمین اور آسماں
+            ان کے سوا جانا کہاں
+            بڑھتی رہے یہ روشنی
+            چلتا رہے یہ کارواں
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            
+            گھر اپنا تو سب کو
+            جی جان سے پیارا لگتا ہے
+            تارا لگتا ہے
+            ہم کو بھی اپنے ہر ارمان سے
+            پیارا لگتا ہے
+            تارا لگتا ہے
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+            دل دل پاکستان، جان جان پاکستان
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">  جذبہ جنون تو ہمت نہ ہار</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Hai Jazba Junoon Tu Himmat na Haar song for pakistan cricket team _ Hai jazba junoon full song.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio2" controls class="w-100 mb-3">
+            <source src="songs/Hai Jazba Junoon Tu Himmat na Haar song for pakistan cricket team _ Hai jazba junoon full song.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            جذبہ جنون تو ہمت نہ ہار
+            بس چل پڑا ہے لے کے کارواں
+            جذبہ جنون تو ہمت نہ ہار
+            بس چل پڑا ہے لے کے کارواں
+            
+            ساحل کی ہے تلاش تجھے؟
+            لہروں کا سامنا کر
+            کشتی ہے تیری مقتل، تو
+            کیا ڈرتا ہے طوفان سے؟
+            ٹکرا جا!
+            
+            جذبہ جنون تو ہمت نہ ہار
+            بس چل پڑا ہے لے کے کارواں
+            جذبہ جنون تو ہمت نہ ہار
+            بس چل پڑا ہے لے کے کارواں
+            
+            جنوں کی حکایتیں ہیں، ابھی لبوں پہ باقی
+            عجب سی یہ داستاں ہے، نہ کوئی ابتدا ہے
+            نہ کوئی انتہا ہے
+            
+            جذبہ جنون تو ہمت نہ ہار
+            بس چل پڑا ہے لے کے کارواں
+            جذبہ جنون تو ہمت نہ ہار
+            بس چل پڑا ہے لے کے کارواں
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title"> اے راہِ حق کے شہیدو</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Aye Rah-e-Haq Ke Saheedo.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio3" controls class="w-100 mb-3">
+            <source src="songs/Aye Rah-e-Haq Ke Saheedo.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            اے راہِ حق کے شہیدو
+            وفا کی تصویرو
+            تمہیں وطن کی ہوائیں
+            سلام کہتی ہیں
+            
+            لگانے آگ جو آئے تھے آشیانے کو
+            وہ شعلے اپنے لہو سے بجھا دیے تم نے
+            بچا لیا ہے یتیمی سے کتنے چہروں کو
+            سہاگ کتنی بہاروں کے رکھ لیے تم نے
+            تمہیں چمن کی فضائیں
+            سلام کہتی ہیں
+            
+            چلے جو ہو گے شہادت کا جام پی کے تم
+            رسولِ پاک نے بانہوں میں لے لیا ہو گا
+            علی تمہاری شجاعت پہ جھومتے ہوں گے
+            حسینِ پاک نے ارشاد یہ کیا ہو گا
+            تمہیں خدا کی رضائیں
+            سلام کہتی ہیں
+            
+            اے راہِ حق کے شہیدو
+            وفا کی تصویرو
+            تمہیں وطن کی ہوائیں
+            سلام کہتی ہیں 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">سوہنی دھرتی اللہ رکھے</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Sohni Dharti Allah Rakhay Qadam Qadam Abad 2.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio4" controls class="w-100 mb-3">
+            <source src="songs/Sohni Dharti Allah Rakhay Qadam Qadam Abad 2.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            سوہنی دھرتی اللہ رکھے
+            قدم قدم آباد
+            سدا رہے یہ پیارا وطن
+            جیسے اب ہے ویسا ہی شاد
+            
+            سوہنی دھرتی اللہ رکھے
+            قدم قدم آباد
+            
+            پھلتی پھولتی رہیو یہ بستی
+            رہیو ہمیشہ ساتھ یہ مستی
+            بادل برسن، کھیت ہرے ہوں
+            موج میں ہو دریا
+            سبز بہاریں، پیار کی نگری
+            پیار میں ہو دنیا
+            
+            سوہنی دھرتی اللہ رکھے
+            قدم قدم آباد
+            سدا رہے یہ پیارا وطن
+            جیسے اب ہے ویسا ہی شاد
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row g-4">
+      <!-- Card 5 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/Ye Watan Tumhara Hai.jpg" class="card-img-top" alt="Ye Watan tumhara he" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Ye Watan tumhara he</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal5">Play</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 6 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/watan ki mitti.jpeg" class="card-img-top" alt="Jazba Junoon" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Watan ki mitti</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal6">Play</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 7 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/shukriya pakistan.webp" class="card-img-top" alt="Ae Rah-e-Haq Ke Shaheedo" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Shukriya Pakistan</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal7">Play</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 8 -->
+      <div class="col-md-3">
+        <div class="card song-card">
+          <img src="images/j.j.p.jpeg" class="card-img-top" alt="Sohni Dharti" />
+          <div class="card-body text-center">
+            <h5 class="card-title">Jeevay Jeevay Pakistani</h5>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal8">Play</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modals -->
+  <!-- Modal 5 -->
+  <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">یہ وطن تمہارا ہے</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Ye Watan Tumhara Hai - Mehdi Hassan.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio1" controls class="w-100 mb-3">
+            <source src="songs/Ye Watan Tumhara Hai - Mehdi Hassan.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            شاعر: Kaleem Usmani
+            گلوکار: Mehdi Hassan
+            
+            یہ وطن تمہارا ہے، تم ہو پاسباں اس کے
+            یہ چمن تمہارا ہے، تم ہو نغمہ خواں اس کے
+            
+            اس چمن میں رنگ و بو، تم سے ہے
+            اس زمیں کی آبرو، تم سے ہے
+            یہ فضائیں تمہیں سلام کریں
+            یہ بہاریں تمہیں سلام کریں
+            
+            یہ وطن تمہارا ہے، تم ہو پاسباں اس کے
+            
+            ہر قدم پہ مٹی کا رنگ ہے
+            ہر نظر میں خوابوں کا رنگ ہے
+            یہ وطن تمہاری امید ہے
+            یہ وطن تمہاری تمہید ہے
+            
+            یہ وطن تمہارا ہے، تم ہو پاسباں اس کے
+            
+            زندگی کا گلستاں تم سے ہے
+            قوم کی ہر داستاں تم سے ہے
+            تم ہو فرد کل کے آئینہ
+            تم ہو ماضی و حال کا فسانہ
+            
+            یہ وطن تمہارا ہے، تم ہو پاسباں اس کے
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 6 -->
+  <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title"> وطن کی مٹی گواہ رہنا</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Watan ki Matti Gawah Rehna I Urdu Lyrics I Nayarra Noor I 6 September Song I وطن کی مٹی گواہ رہنا.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio2" controls class="w-100 mb-3">
+            <source src="songs/Watan ki Matti Gawah Rehna I Urdu Lyrics I Nayarra Noor I 6 September Song I وطن کی مٹی گواہ رہنا.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            گلوکار: نجم شیراز
+            شاعر: نجم شیراز
+            نغمہ: وطن کی جی (وطن کی مٹی گواہ رہنا)
+            
+            وطن کی مٹی گواہ رہنا
+            وطن کی مٹی گواہ رہنا
+            ہم نے یہ قسم نبھائی ہے
+            ہم نے یہ قسم نبھائی ہے
+            
+            خود پہ کڑی گھڑی آئے
+            یا جان پہ بن جائے
+            ہم پیچھے نہ ہٹنے پائیں
+            ہم ڈر کے نہ جھکنے پائیں
+            
+            دل ایک ہے ایک ہے جان
+            ایک ہے ہماری پہچان
+            پاکستان پاکستان
+            پاکستان پاکستان
+            
+            وطن کی مٹی گواہ رہنا
+            ہم نے یہ قسم نبھائی ہے
+            ہم نے یہ قسم نبھائی ہے 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 7 -->
+  <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">شکریہ پاکستان</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Shukria Pakistan _ Urdu Lyrics _ 14th August _ Independence Day _ Pakistan Zindabad _Sultan Creator.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio3" controls class="w-100 mb-3">
+            <source src="songs/Shukria Pakistan _ Urdu Lyrics _ 14th August _ Independence Day _ Pakistan Zindabad _Sultan Creator.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            مٹی کے تعویز بنا کے
+            نام وطن کا گلے لگا
+            ہر ہر مشکل سے ہاتھ چھڑا کے
+            تیرے سارے خواب بچا کے
+            بس اتنا کہنے آئے ہیں
+            
+            شکریہ پاکستان پاکستان شکریہ
+            مسکراء پاکستان پاکستان مسکراء
+            
+            کوئی بھی ایسا نام نہ آئے،
+            جس میں پاکستان نہ آئے
+            کوئی بھی کام نہ آئے جس
+            میں پاکستان نہ آئے
+            
+            روشن سورج چڑھ آئے تو
+            پھر کوئی بھی شام نہ آئے
+            اس مٹی کو ہاتھ لگا کے
+            ماتھے پہ یہ خاک لگا کے
+            رکھا دل کے ساتھ لگا کے
+            نام سے پہلے پاک لگا کے
+            بس اتنا کہنے آئے ہیں
+            
+            شکریہ پاکستان پاکستان شکریہ
+            مسکراء پاکستان پاکستان مسکراء
+            
+            نام تیرا یوں ساتھ لگا کے
+            نام کے آگے ذات
+            جس جس بات میں تو رہتا ہے
+            دل سے ہر وہ بات لگا کے
+            
+            بس اتنا کہنے آئے ہیں
+            
+            شکریہ پاکستان پاکستان شکریہ
+            مسکراء پاکستان پاکستان مسکراء 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 8 -->
+  <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-white">
+          <h5 class="modal-title">جیئے، جیئے، جیئے پاکستان</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <!-- Download Button Added Here -->
+        <a href="songs/Jeeway Jeeway Pakistan PTV 25th Anniversary.mp3" download class="btn btn-primary mb-3">
+          Download Song
+        </a>
+        <div class="modal-body">
+          <audio id="audio4" controls class="w-100 mb-3">
+            <source src="songs/Jeeway Jeeway Pakistan PTV 25th Anniversary.mp3" type="audio/mpeg">
+          </audio>
+          <div class="lyrics-box">
+            جیئے، جیئے، جیئے پاکستان
+
+            جیئے، جیئے، جیئے پاکستان
+            جیئے، جیئے، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            جیئے، جیئے، جیئے، جیئے
+            جیئے، جیئے، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            
+            من پنچھي جب پنکھ ہلائے
+            کیا کیا سر بکھرائے ہو
+            کیا کیا سر بکھرائے
+            سننے والے سنیں تو اُن میں
+            ایک ہی دھن لہراۓ ہو ہو
+            ایک ہی دھن لہراۓ ہو ہو
+            
+            پاکستان پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            جیئے، جیئے، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            
+            بکھرے ہوئے کو بچھڑے ہوئے کو
+            ایک مرکز پہ لایا ہو
+            ایک مرکز پہ لایا
+            کتنے ستاروں کے جھرمٹ میں
+            سورج بن کے آیا ہو ہو
+            سورج بن کے آیا ہو ہو
+            
+            پاکستان پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            جیئے، جیئے، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            
+            جھیل گئے دکھ جھیلنے والے
+            جھیل گئے دکھ جھیلنے والے
+            
+            اب ہے کام ہمارا ہو
+            اب ہے کام ہمارا
+            ایک رکھیں گے، ایک رہے گا
+            ایک ہے نام ہمارا ہو
+            ایک ہے نام ہمارا ہو ہو
+            
+            پاکستان پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            جیئے، جیئے، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            جیئے، جیئے، جیئے، جیئے
+            جیئے، جیئے، جیئے پاکستان
+            پاکستان پاکستان، جیئے پاکستان
+            
+            پاکستان پاکستان، جیئے پاکستان 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Me Hoon Pakistan - Help Center</p>
+    <small>
+      <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+      <a href="#" class="text-white text-decoration-none">Terms</a>
+    </small>
+  </div>
+</footer>
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Auto Play Script -->
+  <script>
+    const songModal1 = document.getElementById('songModal1');
+    const audio1 = document.getElementById('audio1');
+
+    songModal1.addEventListener('shown.bs.modal', function () {
+      audio1.currentTime = 0;
+      audio1.play();
+    });
+
+    songModal1.addEventListener('hidden.bs.modal', function () {
+      audio1.pause();
+      audio1.currentTime = 0;
+    });
+  </script>
+</body>
+</html>
